@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: malvin-takeit-md
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: PORT
+        value: 3000
